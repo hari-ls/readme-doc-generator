@@ -47,10 +47,13 @@ const questions = [
     name: "license",
     message: "Select license type:",
     choices: [
-      "Apache license 2.0",
-      "GNU General Public License v3.0",
-      "MIT",
-      "Open Software License 3.0",
+      "GNU AGPLv3",
+      "GNU GPLv3",
+      "GNU LGPLv3",
+      "Mozilla Public License 2.0",
+      "Apache License 2.0",
+      "MIT License",
+      "Boost Software License 1.0",
       "The Unlicense",
     ],
   },
@@ -70,8 +73,6 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  console.log(fileName, data);
-  console.log(generateMarkdown(data));
   fs.writeFile(fileName, generateMarkdown(data), (err) => {
     err ? console.error(err) : console.log("Success!");
   });
@@ -79,6 +80,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+  console.log(
+    `\u001b[32mPlease follow the prompts to enter information about your application repository, to generate a README.md file,\x1b[0m`
+  );
   inquirer.prompt(questions).then((answers) => {
     writeToFile("README.md", answers);
   });
