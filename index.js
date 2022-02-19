@@ -66,7 +66,7 @@ const questions = [
   // Email Address (input)
   {
     type: "input",
-    name: "emal",
+    name: "email",
     message: "Enter your Email address:",
   },
 ];
