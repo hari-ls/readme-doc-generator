@@ -1,5 +1,7 @@
 # Readme Doc Generator
 
+[![The Unlicense](https://img.shields.io/badge/license-The%20Unlicense-green)](#license)
+
 This project uses Node.js with dependencies to generate a README.md for application project based on the inputs provided in the console prompts.
 
 - This project was part of a coding bootcamp activity, as homework.
@@ -8,8 +10,6 @@ This project uses Node.js with dependencies to generate a README.md for applicat
 - Coding this application helped understand how to work with node, install dependencies and work with modular approach.
 
 > This README.md was generated using this application.
-
-[![The Unlicense](https://img.shields.io/badge/license-The%20Unlicense-green)](#license)
 
 ## Table of Contents
 
